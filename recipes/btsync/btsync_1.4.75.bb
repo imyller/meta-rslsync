@@ -3,11 +3,10 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-LIC_FILES_CHKSUM = "file://LICENSE.TXT;md5=1b53c5d16e99847de43031766e8e47cc"
+LIC_FILES_CHKSUM = "file://LICENSE.TXT;md5=4b2e12dbe1b2dcec6a731f5af7f0da1a"
 
 PR = "r1"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 S = "${WORKDIR}"
@@ -18,8 +17,8 @@ SRC_URI = " \
 	file://btsync.init\
 "
 
-SRC_URI[md5sum] = "aab8af9e3764e61622694a07062ea720"
-SRC_URI[sha256sum] = "a97cc835274af526b9fc8cf8e9212a241afca55bf1f4663ebafbad3b98e96ae9"
+SRC_URI[md5sum] = "9e8156456000eff48c3214e56f9fbdef"
+SRC_URI[sha256sum] = "349155bf02e9170f3a7ae155e8a9ebde24a4959d578a329b40cb77002f6317cb"
 
 INSANE_SKIP_${PN} += "ldflags"
 INSANE_SKIP_${PN} += "already-stripped"
