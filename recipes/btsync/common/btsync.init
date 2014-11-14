@@ -8,38 +8,38 @@
 # X-UnitedLinux-Should-Stop: $
 # Default-Start:     3 5
 # Default-Stop:      0 1 2 6
-# Short-Description: BTSync Daemon
+# Short-Description: BitTorrent Sync
 # Description:       Start btsync
 ### END INIT INFO
 
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON=/usr/sbin/btsync
 NAME=btsync
-DESC="BTSync Daemon"
+DESC="BitTorrent Sync"
 OPTS="--config /etc/btsync/btsync.conf"
 
 case "$1" in
   start)
 	echo -n "Starting $DESC: "
 	start-stop-daemon --start -x "$DAEMON" -- $OPTS > /dev/null
-	echo "ok"
+	echo "OK"
 	;;
   stop)
 	echo -n "Stopping $DESC: "
 	start-stop-daemon --stop -x "$DAEMON" > /dev/null
-	echo "ok"
+	echo "OK"
 	;;
   reload)
 	echo -n "Reloading $DESC: "
 	killall -s HUP btsync
-	echo "ok"
+	echo "OK"
 	;;
   restart|force-reload)
 	echo -n "Restarting $DESC: "
 	start-stop-daemon --stop -x "$DAEMON" > /dev/null
 	sleep 1
 	start-stop-daemon --start -x "$DAEMON" -- $OPTS > /dev/null
-	echo "ok"
+	echo "OK"
 	;;
   *)
 	N=/etc/init.d/$NAME
