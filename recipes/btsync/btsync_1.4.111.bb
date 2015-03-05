@@ -1,4 +1,4 @@
-require btsync.inc
+require btsync_1.4.inc
 
 LIC_FILES_CHKSUM = "file://LICENSE.TXT;md5=4b2e12dbe1b2dcec6a731f5af7f0da1a"
 

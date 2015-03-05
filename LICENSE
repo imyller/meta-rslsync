@@ -1,18 +1,23 @@
 BitTorrent® Sync is owned and developed by BitTorrent® Inc.
-Copyright 2013, 2014 - BitTorrent Inc.
-By using this application, you agree to BitTorrent's Inc. Privacy Policy and Terms.
+
+Copyright 2015 BitTorrent Inc.
+
+By using this application, you agree to our Privacy Policy, Terms of Use and End User License Agreement.
 http://www.bittorrent.com/legal/privacy
 http://www.bittorrent.com/legal/terms-of-use
+http://www.bittorrent.com/legal/eula
 
 --
 
-BitTorrent Sync Bitbake Packaging found in meta-btsync are developed and maintained by Ilkka Myller
-Copyright 2014 - Ilkka Myller <ilkka.myller@nodefield.com>.
+BitTorrent Sync Bitbake Packaging found in meta-btsync is developed and maintained by Ilkka Myller
+
+Copyright 2014, 2015 Ilkka Myller <ilkka.myller@nodefield.com>.
+
 Released under MIT license:
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Ilkka Myller
+Copyright (c) 2014, 2015 Ilkka Myller
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

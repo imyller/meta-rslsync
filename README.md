@@ -9,7 +9,7 @@ as well as native NAS integration.
 BitTorrent&reg; Inc. __delivers for Linux users only a raw binary file without
 any deployment concept or setup system__. It's up to the user to create a
 reliable startup and shutdown logic and to manage a configuration file. Also a
-dedicated GUI, as provided for Windows and Mac OSX is missing.
+dedicated GUI, as provided for Windows and OS X is missing.
 
 The scope of this project is to provide latest Bitbake package recipes for 
 server version of BitTorrent Sync.
@@ -17,20 +17,18 @@ server version of BitTorrent Sync.
 **THESE SOFTWARE IS UNOFFICIAL AND NOT THE WORK OF BITTORRENT&reg; INC.
 PLEASE DO NOT CONTACT THE BITTORRENT&reg; INC. SUPPORT WITH QUESTIONS OR
 PROBLEMS RELATED TO THE USE OF THE PACKAGES. YOU WILL FIND COMPETENT HELP
-AND SUPPORT IN THE RELATED DISCUSSION THREAD IN THE SUPPORT FORUM (Links
+AND SUPPORT IN THE RELATED DISCUSSION THREAD IN THE SUPPORT FORUM (Link
 below)**
 
 
 Useful Links
 ============
 
-- [Project Home Page][2]
 - [BitTorrent Sync Home Page][1]
-- [BitTorrent Sync Support Forum][3]
+- [BitTorrent Sync Support Forum][2]
 
 [1]: http://www.bittorrent.com/sync
-[2]: http://www.yeasoft.com/site/projects:btsync-deb
-[3]: http://forum.bittorrent.com/forum/107-bittorrent-sync/
+[2]: http://forum.bittorrent.com/forum/107-bittorrent-sync/
 
 Installation
 ============
@@ -61,18 +59,3 @@ Usage
 ```
     bitbake btsync
 ```
-
-Copyright and Legal Stuff
-========================
-
-BitTorrent® Sync is owned and developed by BitTorrent® Inc.
-Copyright 2013, 2014 BitTorrent Inc.
-By using this application, you agree to BitTorrent Inc. Privacy Policy and Terms.
-* http://www.bittorrent.com/legal/privacy
-* http://www.bittorrent.com/legal/terms-of-use
-
----
-
-BitTorrent Sync Bitbake Packaging found in meta-btsync are developed and maintained by Ilkka Myller.
-Copyright 2014 Ilkka Myller <ilkka.myller@nodefield.com>.
-Released under MIT license. Please read the license conditions.
