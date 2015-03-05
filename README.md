@@ -1,5 +1,5 @@
-OpenEmbedded / Angstrom Distribution layer for BitTorrent Sync 
-==============================================================
+OpenEmbedded recipe layer for BitTorrent Sync 
+=============================================
 
 [BitTorrent&reg; Sync][1] from BitTorrent&reg; Inc. is a simple tool that
 applies p2p protocol for direct live folder sync with maximum security, network
@@ -52,7 +52,7 @@ Installation
 Usage
 =====
 
-### Building Bittorrent Sync package
+### Building BitTorrent Sync package
 
 1. To build latest BitTorrent Sync package:
 
