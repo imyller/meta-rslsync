@@ -3,7 +3,7 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-INC_PR = "r1"
+INC_PR = "r2"
 
 PR = "${INC_PR}.0"
 
@@ -55,4 +55,8 @@ FILES_${PN} = " \
         ${sysconfdir}/init.d/btsync \
 	${localstatedir}/lib/btsync \
 	${base_libdir}/ld-linux.so.3 \
+"
+
+CONFFILES_${PN} = " \
+        ${sysconfdir}/btsync/btsync.conf \
 "
