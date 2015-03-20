@@ -1,6 +1,0 @@
-require btsync_2.0.inc
-
-LIC_FILES_CHKSUM = "file://LICENSE.TXT;md5=4b2e12dbe1b2dcec6a731f5af7f0da1a"
-
-SRC_URI[md5sum] = "b72f1d4293750702a14e256746801d09"
-SRC_URI[sha256sum] = "43a49ca34115613f1e111e2fb820d894d01eda53a319a94924d1da6fcd044286"
