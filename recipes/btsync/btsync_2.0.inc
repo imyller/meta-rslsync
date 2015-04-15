@@ -3,7 +3,7 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-INC_PR = "r2"
+INC_PR = "r3"
 
 PR = "${INC_PR}.0"
 
@@ -12,7 +12,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/common:"
 S = "${WORKDIR}"
 
 SRC_URI = " \
-        http://syncapp.bittorrent.com/${PV}/btsync_${TARGET_ARCH}-${PV}.tar.gz\
+        https://download-cdn.getsyncapp.com/${PV}/linux-${TARGET_ARCH}/BitTorrent-Sync_${TARGET_ARCH}.tar.gz \
 	file://btsync.conf\
 	file://btsync.init\
 "
