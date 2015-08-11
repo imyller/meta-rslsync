@@ -3,7 +3,7 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-INC_PR = "r3"
+INC_PR = "r4"
 
 PR = "${INC_PR}.0"
 
@@ -12,9 +12,9 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/common:"
 S = "${WORKDIR}"
 
 SRC_URI = " \
-        https://download-cdn.getsyncapp.com/${PV}/linux-${TARGET_ARCH}/BitTorrent-Sync_${TARGET_ARCH}.tar.gz \
-	file://btsync.conf\
-	file://btsync.init\
+        https://download-cdn.getsync.com/${PV}/linux-${TARGET_ARCH}/BitTorrent-Sync_${TARGET_ARCH}.tar.gz;name=bin \
+	file://btsync.conf;name=conf \
+	file://btsync.init;name=init \
 "
 
 INSANE_SKIP_${PN} += "ldflags"
