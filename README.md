@@ -28,8 +28,8 @@ Useful Links
 - [BitTorrent Sync Home Page][1]
 - [BitTorrent Sync Support Forum][2]
 
-[1]: http://www.bittorrent.com/sync
-[2]: http://forum.bittorrent.com/forum/107-bittorrent-sync/
+[1]: https://getsync.com
+[2]: https://forum.getsync.com
 
 Installation
 ============
