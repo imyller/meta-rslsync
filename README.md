@@ -30,33 +30,3 @@ Useful Links
 
 [1]: https://getsync.com
 [2]: https://forum.getsync.com
-
-Installation
-============
-
-1. Add `meta-btsync` layer to `sources/layers.txt`
-
-    ```
-      meta-btsync,git://github.com/imyller/meta-btsync.git,master,HEAD
-    ```
-    
-2. Add `meta-btsync` layer to `EXTRALAYERS` in `conf/bblayers.conf`
-
-    ```
-        EXTRALAYERS +=" \
-            ${TOPDIR}/sources/meta-btsync \
-        "
-    ```
-  
-3. Run `oebb.sh update`
-
-Usage
-=====
-
-### Building BitTorrent Sync package
-
-1. To build latest BitTorrent Sync package:
-
-```
-    bitbake btsync
-```
