@@ -3,7 +3,7 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-INC_PR = "r4"
+INC_PR = "r5"
 
 PR = "${INC_PR}.0"
 
@@ -11,14 +11,29 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/common:"
 
 S = "${WORKDIR}"
 
+BIN_ARCH = "${TARGET_ARCH}"
+BIN_ARCH_x86_64 = "x64"
+BIN_ARCH_i486 = "i386"
+BIN_ARCH_i586 = "i386"
+BIN_ARCH_i686 = "i386"
+BIN_ARCH_armeb = "arm"
+BIN_ARCH_arm = "${@base_contains('TUNE_FEATURES', 'callconvention-hard', 'armhf', 'arm', d)}"
+
 SRC_URI = " \
-        https://download-cdn.getsync.com/${PV}/linux-${TARGET_ARCH}/BitTorrent-Sync_${TARGET_ARCH}.tar.gz;name=bin \
+        https://download-cdn.getsync.com/${PV}/linux-armhf/BitTorrent-Sync_armhf.tar.gz;name=bin_armhf;subdir=armhf \
+	https://download-cdn.getsync.com/${PV}/linux-arm/BitTorrent-Sync_arm.tar.gz;name=bin_arm;subdir=arm \
+	https://download-cdn.getsync.com/${PV}/linux-x64/BitTorrent-Sync_x64.tar.gz;name=bin_x64;subdir=x64 \
+	https://download-cdn.getsync.com/${PV}/linux-i386/BitTorrent-Sync_i386.tar.gz;name=bin_i386;subdir=i386 \
 	file://btsync.conf;name=conf \
 	file://btsync.init;name=init \
 "
 
+do_configure[noexec] = "1"
+do_compile[noexec] = "1"
+
 INSANE_SKIP_${PN} += "ldflags"
 INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP_${PN} += "file-rdeps"
 
 inherit update-rc.d
 
@@ -26,9 +41,8 @@ INITSCRIPT_NAME = "btsync"
 INITSCRIPT_PARAMS = "defaults"
 
 do_install() {
-	
 	install -d ${D}${sbindir}
-	install -m 0755 ${WORKDIR}/btsync ${D}${sbindir}/
+	install -m 0755 ${WORKDIR}/${BIN_ARCH}/btsync ${D}${sbindir}/
 
 	install -d ${D}${localstatedir}/lib/btsync
 
@@ -38,7 +52,7 @@ do_install() {
 	install -d ${D}${sysconfdir}/btsync
 	install -m 0655 ${WORKDIR}/btsync.conf ${D}${sysconfdir}/btsync/
 
-	if [ "${TARGET_ARCH}" = "arm" ]; then
+	if [ "${BIN_ARCH}" = "armhf" ]; then
 
 		# Hack to fix missing ld-linux.so.3 symlink in /lib
 		# Warning: currently this is not generic as it symlinks with armhf lib 
