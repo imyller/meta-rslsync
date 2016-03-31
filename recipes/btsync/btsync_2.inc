@@ -3,7 +3,7 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-INC_PR = "r5"
+INC_PR = "r6"
 
 PR = "${INC_PR}.0"
 
@@ -34,6 +34,7 @@ do_compile[noexec] = "1"
 INSANE_SKIP_${PN} += "ldflags"
 INSANE_SKIP_${PN} += "already-stripped"
 INSANE_SKIP_${PN} += "file-rdeps"
+INSANE_SKIP_${PN} += "build-deps"
 
 inherit update-rc.d
 
