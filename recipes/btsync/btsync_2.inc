@@ -3,7 +3,7 @@ SECTION = "network"
 
 LICENSE = "Proprietary"
 
-INC_PR = "r6"
+INC_PR = "r7"
 
 PR = "${INC_PR}.0"
 
@@ -20,10 +20,10 @@ BIN_ARCH_armeb = "arm"
 BIN_ARCH_arm = "${@base_contains('TUNE_FEATURES', 'callconvention-hard', 'armhf', 'arm', d)}"
 
 SRC_URI = " \
-        https://download-cdn.getsync.com/${PV}/linux-armhf/BitTorrent-Sync_armhf.tar.gz;name=bin_armhf;subdir=armhf \
-	https://download-cdn.getsync.com/${PV}/linux-arm/BitTorrent-Sync_arm.tar.gz;name=bin_arm;subdir=arm \
-	https://download-cdn.getsync.com/${PV}/linux-x64/BitTorrent-Sync_x64.tar.gz;name=bin_x64;subdir=x64 \
-	https://download-cdn.getsync.com/${PV}/linux-i386/BitTorrent-Sync_i386.tar.gz;name=bin_i386;subdir=i386 \
+        https://download-cdn.getsync.com/${PV}/linux-armhf/BitTorrent-Sync_armhf.tar.gz;name=bin_armhf;subdir=armhf;downloadfilename=${PN}-${PV}-armhf.tar.gz \
+	https://download-cdn.getsync.com/${PV}/linux-arm/BitTorrent-Sync_arm.tar.gz;name=bin_arm;subdir=arm;downloadfilename=${PN}-${PV}-arm.tar.gz \
+	https://download-cdn.getsync.com/${PV}/linux-x64/BitTorrent-Sync_x64.tar.gz;name=bin_x64;subdir=x64;downloadfilename=${PN}-${PV}-x64.tar.gz \
+	https://download-cdn.getsync.com/${PV}/linux-i386/BitTorrent-Sync_i386.tar.gz;name=bin_i386;subdir=i386;downloadfilename=${PN}-${PV}-i386.tar.gz \
 	file://btsync.conf;name=conf \
 	file://btsync.init;name=init \
 "
