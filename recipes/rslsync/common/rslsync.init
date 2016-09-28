@@ -1,22 +1,22 @@
 #!/bin/sh
 
 ### BEGIN INIT INFO
-# Provides:          btsync
+# Provides:          rslsync
 # Required-Start:    $network
 # X-UnitedLinux-Should-Start:
 # Required-Stop:     $network
 # X-UnitedLinux-Should-Stop: $
 # Default-Start:     3 5
 # Default-Stop:      0 1 2 6
-# Short-Description: BitTorrent Sync
-# Description:       Start btsync
+# Short-Description: Resilio Sync
+# Description:       Start rslsync
 ### END INIT INFO
 
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/usr/sbin/btsync
-NAME=btsync
-DESC="BitTorrent Sync"
-OPTS="--config /etc/btsync/btsync.conf"
+DAEMON=/usr/sbin/rslsync
+NAME=rslsync
+DESC="Resilio Sync"
+OPTS="--config /etc/rslsync/rslsync.conf"
 
 case "$1" in
   start)
@@ -31,7 +31,7 @@ case "$1" in
 	;;
   reload)
 	echo -n "Reloading $DESC: "
-	killall -s HUP btsync
+	killall -s HUP rslsync
 	echo "OK"
 	;;
   restart|force-reload)

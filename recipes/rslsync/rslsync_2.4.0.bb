@@ -1,4 +1,4 @@
-require btsync_2.inc
+require rslsync_2.inc
 
 LIC_FILES_CHKSUM = "file://arm/LICENSE.TXT;md5=4b2e12dbe1b2dcec6a731f5af7f0da1a"
 
