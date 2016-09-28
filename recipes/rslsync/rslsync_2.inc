@@ -20,10 +20,10 @@ BIN_ARCH_armeb = "arm"
 BIN_ARCH_arm = "${@base_contains('TUNE_FEATURES', 'callconvention-hard', 'armhf', 'arm', d)}"
 
 SRC_URI = " \
-        https://download-cdn.resilio.com/${PV}/linux-armhf/Resilio-Sync_armhf.tar.gz;name=bin_armhf;subdir=armhf;downloadfilename=${PN}-${PV}-armhf.tar.gz \
-	https://download-cdn.resilio.com/${PV}/linux-arm/Resilio-Sync_arm.tar.gz;name=bin_arm;subdir=arm;downloadfilename=${PN}-${PV}-arm.tar.gz \
-	https://download-cdn.resilio.com/${PV}/linux-x64/Resilio-Sync_x64.tar.gz;name=bin_x64;subdir=x64;downloadfilename=${PN}-${PV}-x64.tar.gz \
-	https://download-cdn.resilio.com/${PV}/linux-i386/Resilio-Sync_i386.tar.gz;name=bin_i386;subdir=i386;downloadfilename=${PN}-${PV}-i386.tar.gz \
+        https://download-cdn.resilio.com/${PV}/linux-armhf/resilio-sync_armhf.tar.gz;name=bin_armhf;subdir=armhf;downloadfilename=${PN}-${PV}-armhf.tar.gz \
+	https://download-cdn.resilio.com/${PV}/linux-arm/resilio-sync_arm.tar.gz;name=bin_arm;subdir=arm;downloadfilename=${PN}-${PV}-arm.tar.gz \
+	https://download-cdn.resilio.com/${PV}/linux-x64/resilio-sync_x64.tar.gz;name=bin_x64;subdir=x64;downloadfilename=${PN}-${PV}-x64.tar.gz \
+	https://download-cdn.resilio.com/${PV}/linux-i386/resilio-sync_i386.tar.gz;name=bin_i386;subdir=i386;downloadfilename=${PN}-${PV}-i386.tar.gz \
 	file://rslsync.conf;name=conf \
 	file://rslsync.init;name=init \
 "

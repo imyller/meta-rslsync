@@ -14,8 +14,9 @@ dedicated GUI, as provided for Windows and macOS is missing.
 The scope of this project is to provide latest OpenEmbedded package recipes for 
 server version of Resilio Sync (`rslsync`).
 
-**THIS SOFTWARE IS UNOFFICIAL AND NOT THE WORK OF RESILIO INC.
-PLEASE DO NOT CONTACT THE RESILIO INC. FOR SUPPORT.**
+**THIS SOFTWARE IS UNOFFICIAL AND NOT THE WORK OF RESILIO INC.**
+
+**PLEASE DO NOT CONTACT THE RESILIO INC. FOR SUPPORT WITH QUESTIONS OR PROBLEMS RELATED TO THE USE OF THESE PACKAGES.**
 
 
 Useful Links
