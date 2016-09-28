@@ -22,7 +22,7 @@ server version of Resilio Sync (`rslsync`).
 Useful Links
 ============
 
-- [Resilio Sync Home Page][1]
+- [Resilio Sync][1]
 - [Resilio Support Forum][2]
 
 [1]: https://getsync.com
