@@ -6,11 +6,6 @@ applies P2P protocol for direct live folder sync with maximum security, network
 speed and storage capacity. It has native versions for Mac, Windows and Linux,
 as well as native NAS integration.
 
-Resilio Inc. __delivers for Linux users only a raw binary file without
-any deployment concept or setup system__. It's up to the user to create a
-reliable startup and shutdown logic and to manage a configuration file. Also a
-dedicated GUI, as provided for Windows and macOS is missing.
-
 The scope of this project is to provide latest OpenEmbedded package recipes for 
 server version of Resilio Sync (`rslsync`).
 
