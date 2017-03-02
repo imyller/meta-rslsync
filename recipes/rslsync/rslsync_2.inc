@@ -17,7 +17,7 @@ BIN_ARCH_i486 = "i386"
 BIN_ARCH_i586 = "i386"
 BIN_ARCH_i686 = "i386"
 BIN_ARCH_armeb = "arm"
-BIN_ARCH_arm = "${@base_contains('TUNE_FEATURES', 'callconvention-hard', 'armhf', 'arm', d)}"
+BIN_ARCH_arm = "${@bb.utils.contains('TUNE_FEATURES', 'callconvention-hard', 'armhf', 'arm', d)}"
 
 SRC_URI = " \
         https://download-cdn.resilio.com/${PV}/linux-armhf/resilio-sync_armhf.tar.gz;name=bin_armhf;subdir=armhf;downloadfilename=${PN}-${PV}-armhf.tar.gz \
